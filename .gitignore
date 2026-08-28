@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+gnn/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Model/data files
+data/*.csv
+data/*.pt
+data/*.pkl
+
+# Large datasets
+*.zip
+*.parquet
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python cache
+.pytest_cache/

@@ -1,0 +1,38 @@
+project:
+  name: GNN Cybersecurity Detection and Prevention
+  random_seed: 42
+
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  samples_dir: data/samples
+  sample_size: 10000
+  target_column: null
+
+split:
+  test_size: 0.15
+  validation_size: 0.15
+
+preprocessing:
+  handle_nan: median
+  handle_inf: replace_with_nan
+  remove_duplicates: true
+  scaler: standard
+
+training:
+  epochs: 50
+  batch_size: 128
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 10
+
+model:
+  hidden_dim: 128
+  num_layers: 2
+  dropout: 0.3
+  heads: 4
+
+output:
+  model_dir: models
+  results_dir: results
+  logs_dir: logs

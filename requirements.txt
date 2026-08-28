@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+xgboost
+torch
+torch-geometric
+matplotlib
+seaborn
+pyyaml
+joblib
+streamlit
+pytest
+datasets
+pyarrow

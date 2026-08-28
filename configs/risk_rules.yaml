@@ -1,0 +1,8 @@
+# Map actual dataset attack labels to risk/action after the labels are inspected.
+default:
+  risk: MEDIUM
+  action: MONITOR
+
+benign:
+  risk: LOW
+  action: ALLOW
